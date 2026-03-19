@@ -1,0 +1,15 @@
+:root {
+  --primary: #aa42e2;
+}
+
+.chart-container {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 600px;
+}
+
+.chart-container h3 {
+  text-align: center;
+  color: var(--foreground-muted);
+  margin-block: calc(var(--spacing) * 6);
+}

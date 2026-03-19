@@ -1,0 +1,23 @@
+:root {
+  --primary: #eea933;
+}
+
+.article {
+  max-width: 600px;
+}
+
+.article h2 {
+  margin-block: calc(var(--spacing) * 2);
+}
+
+.article p {
+  margin-block: var(--spacing);
+}
+
+.article-button {
+    color: var(--primary);
+    border: 0;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 16px;
+}
