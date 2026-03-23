@@ -1,7 +1,3 @@
-:root {
-  --primary: #aa42e2;
-}
-
 .chart-container {
   flex-grow: 1;
   flex-shrink: 0;

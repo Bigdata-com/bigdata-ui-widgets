@@ -6,9 +6,7 @@ export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> },
 ) {
-  const apiKey =
-    request.cookies.get("bigdata-widget-key")?.value ??
-    process.env.BIGDATA_API_KEY;
+  const apiKey = process.env.BIGDATA_API_KEY;
   if (!apiKey) {
     return new Response(
       JSON.stringify({ error: "BIGDATA_API_KEY not configured" }),

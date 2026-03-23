@@ -1,4 +1,5 @@
 .widgets-container {
+  --primary: #a33b47;
   display: flex;
   gap: calc(var(--spacing) * 3);
   margin-top: calc(var(--spacing) * 4);

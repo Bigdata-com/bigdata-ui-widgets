@@ -5,7 +5,7 @@ const AGENTS_EXECUTE_ENDPOINT = "https://agents.bigdata.com/v1/research-agent"
 export async function POST(request: NextRequest) {
   const body = await request.json();  
 
-  const apiKey = request.cookies.get("bigdata-widget-key")?.value ?? process.env.BIGDATA_API_KEY;
+  const apiKey = process.env.BIGDATA_API_KEY;
   if (!apiKey) {
     return new Response(
       JSON.stringify({ error: "BIGDATA_API_KEY not configured" }),

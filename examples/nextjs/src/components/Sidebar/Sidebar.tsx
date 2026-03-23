@@ -2,7 +2,6 @@ import { NavigationMenu } from "@base-ui/react";
 import styles from "./Sidebar.module.css";
 import { SidebarButton } from "./SidebarButton";
 import Link from "next/link";
-import { LoginForm } from "../Login/LoginForm";
 
 function Sidebar() {
   return (
@@ -29,7 +28,6 @@ function Sidebar() {
         </NavigationMenu.List>
       </NavigationMenu.Root>
       <footer>
-        <LoginForm /> 
         Powered by:{" "}
         <Link
           target="_blank"

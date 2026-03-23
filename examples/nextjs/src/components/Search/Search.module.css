@@ -1,7 +1,3 @@
-:root {
-  --primary: #a33b47;
-}
-
 .search {
   flex-grow: 1;
   flex-shrink: 0;
@@ -28,7 +24,6 @@
 .main-filter button[data-disabled] {
   background-color: var(--elevation);
 }
-
 
 .query-input {
   flex-grow: 1;

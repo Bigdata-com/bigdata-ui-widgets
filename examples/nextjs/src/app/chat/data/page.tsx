@@ -1,4 +1,3 @@
-import { ScriptsProvider } from "@/components/ScriptsProvider/ScriptsProvider";
 import { BigdataChatWidget } from "@/components/Widgets/BigdataChatWidget";
 import { BigdataWidgetManagerProvider } from "@/components/Widgets/BigdataWidgetManagerProvider";
 import styles from "./page.module.css";
@@ -12,18 +11,16 @@ export default function Advanced() {
         Give your users the last piece of information to complete their research
       </p>
       <div className={styles["widgets-container"]}>
-        <ScriptsProvider>
-          <BigdataWidgetManagerProvider
-            baseTheme={{ preset: "auto", primaryColor: "#aa42e2" }}
-          >
-            <Chart />
-            <BigdataChatWidget
-              className={styles["widget-item"]}
-              name={"home-chat"}
-              researchConfig={{ inlineAttribution: true }}
-            />
-          </BigdataWidgetManagerProvider>
-        </ScriptsProvider>
+        <BigdataWidgetManagerProvider
+          baseTheme={{ preset: "auto", primaryColor: "#aa42e2" }}
+        >
+          <Chart />
+          <BigdataChatWidget
+            className={styles["widget-item"]}
+            name={"home-chat"}
+            researchConfig={{ inlineAttribution: true }}
+          />
+        </BigdataWidgetManagerProvider>
       </div>
     </div>
   );
