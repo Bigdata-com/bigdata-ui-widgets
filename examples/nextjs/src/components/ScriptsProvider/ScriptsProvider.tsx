@@ -24,11 +24,11 @@ const ScriptsProvider = ({ children }: Props) => {
   return (
     <>
       <Script
-        src="https:/app.bigdata.com/widgets/chat/v1.0.0/bigdata-chat.min.js"
+        src="https://app.bigdata.com/widgets/chat/v1.0.0/bigdata-chat.min.js"
         onLoad={() => setBigdataAgent(window.BigdataAgent)}
       />
       <Script
-        src="https:/app.bigdata.com/widgets/document-viewer/v1.0.0/document-viewer.min.js"
+        src="https://app.bigdata.com/widgets/document-viewer/v1.0.0/document-viewer.min.js"
         onLoad={() => setBigdataDocumentViewer(window.BigdataDocumentViewer)}
       />
       <ScriptsContext
