@@ -1,12 +1,10 @@
 .search {
   flex-grow: 1;
-  flex-shrink: 0;
-  width: 550px;
+  width: 500px;
 }
 
 .main-filter {
   display: flex;
-  width: 100%;
   gap: var(--spacing);
   margin-bottom: var(--spacing);
   align-items: end;

@@ -5,7 +5,7 @@ import { Search } from "@/components/Search/Search";
 
 export default function Explorer() {
   return (
-    <div className={styles["home"]}>
+    <div>
       <h2>Document explorer</h2>
       <p>Visualize your Bigdata content with ease</p>
       <div className={styles["widgets-container"]}>
@@ -13,10 +13,9 @@ export default function Explorer() {
           baseTheme={{ preset: "auto", primaryColor: "#a33b47" }}
         >
           <Search />
-          <BigdataDocumentViewerWidget
-            className={styles["widget-item"]}
-            name={"explorer-viewer"}
-          />
+          <div className={styles["widget-item"]}>
+            <BigdataDocumentViewerWidget name={"explorer-viewer"} />
+          </div>
         </BigdataWidgetManagerProvider>
       </div>
     </div>

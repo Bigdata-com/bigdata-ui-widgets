@@ -34,6 +34,8 @@ function BigdataChatWidget({
         branding,
         manager,
       });
+
+      chatInstance.current.addListener("openlink", (event) => window.open(event.data.url))
     }
 
     return () => {

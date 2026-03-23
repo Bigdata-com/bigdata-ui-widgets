@@ -40,7 +40,7 @@ function Results({ results }: Props) {
     return <div>loading</div>;
   }
 
-  const topResults = results.slice(0, 5);
+  const topResults = results.slice(0, 4);
 
   return (
     <div>
