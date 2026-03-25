@@ -30,6 +30,7 @@ async function fetchResults(_state: State, payload: FormData): Promise<State> {
     method: "POST",
     body: JSON.stringify({
       query: {
+        search_mode: "smart",
         text: query,
         filters:
           onlyPrivate || onlyPublic
