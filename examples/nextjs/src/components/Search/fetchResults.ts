@@ -29,8 +29,8 @@ async function fetchResults(_state: State, payload: FormData): Promise<State> {
   const upstreamRes = await fetch(SEARCH_ENDPOINT, {
     method: "POST",
     body: JSON.stringify({
+      search_mode: "smart",
       query: {
-        search_mode: "smart",
         text: query,
         filters:
           onlyPrivate || onlyPublic
