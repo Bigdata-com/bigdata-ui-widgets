@@ -7,9 +7,8 @@ export default function Home() {
   return (
     <div className={styles["home"]}>
       <h2>Bigdata widgets</h2>
-      <p>
-        Bigdata widgets can communicate between them and display all the data
-        available through our documents and agents APIs
+      <p style={{maxWidth: 600}}>
+        Bigdata widgets are interconnected, composable components that pull from our full data stack — documents, agents, and more — so you can build rich, unified views without stitching anything together
       </p>
       <div className={styles["widgets-container"]}>
         <BigdataWidgetManagerProvider baseTheme={{ preset: "auto" }}>
