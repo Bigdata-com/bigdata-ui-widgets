@@ -63,10 +63,17 @@ type ComputedBigdataWidgetTheme = Required<BigdataWidgetTheme> & {
 };
 
 // chat
+
+type InlineAttributionConfig = {
+  enabled: boolean;
+  showBigdataMoreButton?: boolean;
+  showWebMoreButton?: boolean;
+};
+
 type WidgetResearchConfig = {
   researchEffort?: "lite" | "standard" | "max-preview";
   suggestedQuestions?: Array<string>;
-  inlineAttribution?: boolean;
+  inlineAttribution?: InlineAttributionConfig;
   showAdvancedControls?: boolean;
   placeholder?: string;
   headerTitle?: string;

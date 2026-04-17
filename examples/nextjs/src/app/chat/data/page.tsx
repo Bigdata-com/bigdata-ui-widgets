@@ -18,7 +18,11 @@ export default function Advanced() {
           <BigdataChatWidget
             className={styles["widget-item"]}
             name={"home-chat"}
-            researchConfig={{ inlineAttribution: true }}
+            researchConfig={{ inlineAttribution: {
+                enabled: true,
+                showBigdataMoreButton: true,
+                showWebMoreButton: true,
+              } }}
           />
         </BigdataWidgetManagerProvider>
       </div>
