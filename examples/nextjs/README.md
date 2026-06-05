@@ -22,6 +22,8 @@ yarn dev
 
 Your project should be running on `http://localhost:3000`
 
+The document viewer widget (`v1.1.0`) loads citation chunks via `POST /api/documents/find/v1/search`, which this app proxies to the Bigdata Search API using your API key.
+
 ## Running using Docker
 
 ```bash

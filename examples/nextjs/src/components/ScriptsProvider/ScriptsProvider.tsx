@@ -28,7 +28,7 @@ const ScriptsProvider = ({ children }: Props) => {
         onLoad={() => setBigdataAgent(window.BigdataAgent)}
       />
       <Script
-        src="https://app.bigdata.com/widgets/document-viewer/v1.0.0/document-viewer.min.js"
+        src="https://app.bigdata.com/widgets/document-viewer/v1.1.0/document-viewer.min.js"
         onLoad={() => setBigdataDocumentViewer(window.BigdataDocumentViewer)}
       />
       <ScriptsContext
